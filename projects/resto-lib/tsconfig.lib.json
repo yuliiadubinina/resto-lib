@@ -1,8 +1,8 @@
 {
-  "compileOnSave": false,
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "allowJs": true,
+    "outDir": "../../out-tsc/lib",
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -18,12 +18,8 @@
       "es2018",
       "dom"
     ],
-    "resolveJsonModule": true,
-  },
-  "typedocOptions": {
-  
-    "json": "./docs/doc-api.json",
-    "exclude": "**/*+(e2e|spec|index).ts",
-    "excludePrivate": "true"
+    "paths": {
+      "@angular/*": ["../node_modules/@angular/*"]
+    }
   }
 }

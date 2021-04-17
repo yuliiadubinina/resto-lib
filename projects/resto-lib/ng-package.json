@@ -1,0 +1,5 @@
+{
+    "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../../dist/resto-lib",
+    "lib": "src/public_api.ts"
+}
