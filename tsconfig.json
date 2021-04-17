@@ -20,6 +20,13 @@
     ],
     "resolveJsonModule": true,
   },
+  "path": {
+    "@angular/*": ["./node_modules/@angular/*"],
+    "@resto": ["dist/resto-lib"],
+    "resto-lib": ["dist/resto-lib/*"],
+    "@resto/core": ["dist/resto-lib/"],
+    "@resto/core/*": ["dist/resto-lib/*"],
+  },
   "typedocOptions": {
     "json": "./docs/doc-api.json",
     "exclude": "**/*+(e2e|spec|index).ts",
